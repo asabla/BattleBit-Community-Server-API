@@ -2,7 +2,7 @@
 {
     public enum Team : byte
     {
-        TeamA = 0, 
+        TeamA = 0,
         TeamB = 1,
         None = 2
     }

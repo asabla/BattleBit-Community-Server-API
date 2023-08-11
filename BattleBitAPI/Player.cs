@@ -116,7 +116,7 @@ namespace BattleBitAPI
         {
             GameServer.SetFallDamageMultiplier(this, value);
         }
-        public void SetPrimaryWeapon(WeaponItem item, int extraMagazines,bool clear=false)
+        public void SetPrimaryWeapon(WeaponItem item, int extraMagazines, bool clear = false)
         {
             GameServer.SetPrimaryWeapon(this, item, extraMagazines, clear);
         }

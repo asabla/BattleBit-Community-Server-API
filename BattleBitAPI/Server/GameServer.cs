@@ -12,7 +12,7 @@ namespace BattleBitAPI.Server
 {
     public class GameServer<TPlayer> : System.IDisposable where TPlayer : Player<TPlayer>
     {
-        // ---- Public Variables ---- 
+        // ---- Public Variables ----
         public ulong ServerHash => mInternal.ServerHash;
         public bool IsConnected => mInternal.IsConnected;
         public IPAddress GameIP => mInternal.GameIP;
@@ -664,7 +664,7 @@ namespace BattleBitAPI.Server
         }
         public void SetThrowable(Player<TPlayer> player, string tool, int extra, bool clear = false)
         {
-            SetThrowable(player.SteamID, tool, extra,clear);
+            SetThrowable(player.SteamID, tool, extra, clear);
         }
 
         // ---- Closing ----

@@ -70,5 +70,20 @@ namespace BattleBitAPI.Common
                 return false;
             return right.Name.Equals(left);
         }
+
+        public override bool Equals(object obj)
+        {
+            if (ReferenceEquals(this, obj))
+            {
+                return true;
+            }
+
+            if (ReferenceEquals(obj, null))
+            {
+                return false;
+            }
+
+            throw new NotImplementedException();
+        }
     }
 }

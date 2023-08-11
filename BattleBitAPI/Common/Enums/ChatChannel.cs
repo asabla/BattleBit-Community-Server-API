@@ -2,8 +2,8 @@
 {
     public enum ChatChannel
     {
-        AllChat, 
-        TeamChat, 
+        AllChat,
+        TeamChat,
         SquadChat
     }
 }

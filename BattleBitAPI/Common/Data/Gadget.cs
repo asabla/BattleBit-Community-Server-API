@@ -27,7 +27,7 @@
 
         public static bool operator ==(string left, Gadget right)
         {
-            bool leftNull = object.ReferenceEquals(left,null);
+            bool leftNull = object.ReferenceEquals(left, null);
             bool rightNull = object.ReferenceEquals(right, null);
             if (leftNull && rightNull)
                 return true;
@@ -64,6 +64,21 @@
             if (leftNull || rightNull)
                 return false;
             return right.Name.Equals(left);
+        }
+
+        public override bool Equals(object obj)
+        {
+            if (ReferenceEquals(this, obj))
+            {
+                return true;
+            }
+
+            if (ReferenceEquals(obj, null))
+            {
+                return false;
+            }
+
+            throw new NotImplementedException();
         }
     }
 }
